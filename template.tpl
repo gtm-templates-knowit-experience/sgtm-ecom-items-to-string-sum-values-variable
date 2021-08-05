@@ -15,6 +15,7 @@ ___INFO___
   "securityGroups": [],
   "displayName": "Ecom Items to String or Sum Values",
   "description": "This Variable turns the Ecommerce Item array (e.g. [{item_id: \u0027123\u0027, quantity: 1},{item_id: \u0027234\u0027, quantity: 2}]) into a string (e.g. \u0027123|234\u0027), or sums Item Values (e.g 3).",
+  "categories": ["TAG_MANAGEMENT","UTILITY","ANALYTICS"],
   "containerContexts": [
     "SERVER"
   ]
