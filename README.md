@@ -44,9 +44,9 @@ In the example **Unique Items** are returned. E.g. **[{item_color: 'Blue'},{item
 ![Create Strings from Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-create-string-settings.png)
 
 ### Sum Item Values from Item Parameters
-Image shows how to **Sum Item Values** from **Standard Item Parameter** using the **Select Item Type** dropdown. You can also use **Custom Item Parameters** to sum values.
+Image shows how to **Sum Item Values** using **Standard Item Parameters**. You can also use **Custom Item Parameters** to sum values.
 
-In this example **price** will be multiplied with **quantity**.
+In this example **price** will be **multiplied** with **quantity**.
 
 ![Sum Values from Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-sum-values-settings.png)
 
