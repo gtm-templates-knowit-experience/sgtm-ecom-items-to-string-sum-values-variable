@@ -15,7 +15,7 @@ This Variable for **Google Tag Manager Server-side (SGTM)** turns the Ecommerce 
   * Sum Values from Item Parameter
     * Standard Item Parameters
     * Custom Item Parameters
-    * Multiply Value with Quantity Selection
+    * Multiply Item Value with Item Quantity
 
 ## Variable Functionality in Detail
 ### Select Mapping Method
