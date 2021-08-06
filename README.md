@@ -20,21 +20,23 @@ This Variable for **Google Tag Manager Server-side (SGTM)** turns the Ecommerce 
 ## Variable Functionality in Detail
 ### Select Mapping Method
 Mapping Method can be done using **GA4 Standard Ecommerce Events** or **Custom Mapping**.
-#### GA4 Standard Ecommerce Events
-Image shows how to select GA4 Standard Ecommerce Events.
+#### Mapping using GA4 Standard Ecommerce Events
+Image shows how to map using GA4 Standard Ecommerce Events.
 
 ![Selecting GA4 Standard Ecommerce Events](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-standard-mapping.png)
 
 #### Custom Mapping
 Image shows how to do Custom Mapping.
 
-* Type in the value that should be matched against in the **Custom Parameter Field**
-* Select **Variable** to map against
+* Type in the value in the **Custom Parameter Field** that should be matched against the selected **Variable**. This means the Selected **Variable** should be able to return the value in this field.
+* Select **Variable** to map against.
 
 ![Selecting Custom Mapping](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-custom-mapping.png)
 
 ### Create Strings from Item Parameters
 Image shows how to **Create a String** from a **Custom Item Parameter**. Choosing **Standard Item Parameters** can be done using the **Select Item Type** dropdown.
+
+In the example **Unique Items** are returned. E.g. **[{item_category: 'A'},{item_category: 'B'},{item_category: 'A'}]** will return the result **'A|B'**.
 
 ![Create Strings from Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-create-string-settings.png)
 
