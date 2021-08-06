@@ -19,7 +19,7 @@ This Variable for **Google Tag Manager Server-side (SGTM)** turns the Ecommerce 
 
 ## Variable Functionality in Detail
 ### Select Mapping Method
-Mapping Method can be done using **GA4 Standard Ecommerce Events** or **Custom Mapping**.
+Mapping can be done using **GA4 Standard Ecommerce Events** or **Custom Mapping**.
 
 Mapping simply means that only values that are mapped should return a result.
 
