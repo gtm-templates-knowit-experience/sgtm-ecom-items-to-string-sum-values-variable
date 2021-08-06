@@ -19,14 +19,17 @@ This Variable for **Google Tag Manager Server-side (SGTM)** turns the Ecommerce 
 
 ## Variable Functionality in Detail
 ### Select Mapping Method
-Selecting Mapping Method can be done using **GA4 Standard Ecommerce Events** or **Custom Mapping**.
-#### Selecting GA4 Standard Ecommerce Events
+Mapping Method can be done using **GA4 Standard Ecommerce Events** or **Custom Mapping**.
+#### GA4 Standard Ecommerce Events
 Image shows how to select GA4 Standard Ecommerce Events.
 
 ![Selecting GA4 Standard Ecommerce Events](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-standard-mapping.png)
 
-#### Selecting Custom Mapping
+#### Custom Mapping
 Image shows how to do Custom Mapping.
+
+* Type in the value that should be matched against in the **Custom Parameter Field**
+* Select **Variable** to map against
 
 ![Selecting Custom Mapping](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-custom-mapping.png)
 
@@ -37,6 +40,8 @@ Image shows how to **Create a String** from a **Custom Item Parameter**. Choosin
 
 ### Sum Item Values from Item Parameters
 Image shows how to **Sum Item Values** from **Standard Item Parameter** using the **Select Item Type** dropdown. You can also use **Custom Item Parameters** to sum values.
+
+In this example **price** will be multiplied with **quantity**.
 
 ![Sum Values from Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-sum-values-settings.png)
 
