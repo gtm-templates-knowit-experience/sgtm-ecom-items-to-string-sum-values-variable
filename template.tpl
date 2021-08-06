@@ -14,8 +14,8 @@ ___INFO___
   "version": 1,
   "securityGroups": [],
   "displayName": "Ecom Items to String or Sum Values",
-  "description": "This Variable turns the Ecommerce Item array (e.g. [{item_id: \u0027123\u0027, quantity: 1},{item_id: \u0027234\u0027, quantity: 2}]) into a string (e.g. \u0027123|234\u0027), or sums Item Values (e.g 3).",
-  "categories": ["TAG_MANAGEMENT","UTILITY","ANALYTICS"],
+  "description": "This Variable turns the Ecommerce Item array (e.g. [{item_id: \u002712\u0027, quantity: 1},{item_id: \u002734\u0027, quantity: 2}]) into a string (e.g. \u002712|34\u0027), or sums Item Values (e.g 3).",
+"categories": ["TAG_MANAGEMENT","UTILITY","ANALYTICS"],
   "containerContexts": [
     "SERVER"
   ]
@@ -28,11 +28,11 @@ ___TEMPLATE_PARAMETERS___
   {
     "type": "LABEL",
     "name": "templateDescription",
-    "displayName": "Turn the Item array (e.g. \u003cstrong\u003e[{item_id: \u0027123\u0027, quantity: 1},{item_id: \u0027456\u0027, quantity: 2}]\u003c/strong\u003e) into a string (e.g. \u003cstrong\u003e\u0027123|456\u0027\u003c/strong\u003e), or sums Item Values (e.g \u003cstrong\u003e3\u003c/strong\u003e)."
+    "displayName": "Turn the Item array (e.g. \u003cstrong\u003e[{item_id: \u002712\u0027, quantity: 1},{item_id: \u002734\u0027, quantity: 2}]\u003c/strong\u003e) into a string (e.g. \u003cstrong\u003e\u002712|34\u0027\u003c/strong\u003e), or sum Item Values (e.g \u003cstrong\u003e3\u003c/strong\u003e)."
   },
   {
     "type": "GROUP",
-    "name": "eventSelectionGroup",
+    "name": "mappingSelectionGroup",
     "displayName": "Select Mapping Method",
     "groupStyle": "NO_ZIPPY",
     "subParams": [
@@ -190,7 +190,7 @@ ___TEMPLATE_PARAMETERS___
             "macrosInSelect": true
           }
         ],
-        "newRowButtonText": "Add Custom Mapping",
+        "newRowButtonText": "Add Custom Mapping Parameter",
         "enablingConditions": [
           {
             "paramName": "selectionType",
@@ -245,13 +245,13 @@ ___TEMPLATE_PARAMETERS___
     "simpleValueType": true,
     "defaultValue": "itemStandard",
     "alwaysInSummary": true,
-    "help": "Select a \u003cstrong\u003eStandard Item Parameter\u003c/strong\u003e, or choose \u003cstrong\u003eCustom Item Parameter\u003c/strong\u003e and \u003cstrong\u003etype in\u003c/strong\u003e your parameter."
+    "help": "Select a \u003cstrong\u003eStandard Item Parameter\u003c/strong\u003e, or choose \u003cstrong\u003eCustom Item Parameter\u003c/strong\u003e."
   },
   {
     "type": "GROUP",
     "name": "itemStringGroup",
     "displayName": "Select Item Parameter Settings",
-    "groupStyle": "ZIPPY_OPEN_ON_PARAM",
+    "groupStyle": "NO_ZIPPY",
     "subParams": [
       {
         "type": "SELECT",
@@ -346,8 +346,12 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "Some help text",
-        "valueValidators": []
+        "help": "Type in your \u003cstrong\u003eCustom Item String\u003c/strong\u003e Parameter, e.g. \u003cstrong\u003eitem_color\u003c/strong\u003e.",
+        "valueValidators": [
+          {
+            "type": "NON_EMPTY"
+          }
+        ]
       },
       {
         "type": "TEXT",
@@ -382,7 +386,7 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "Choose if only \u003cstrong\u003eUnique Items\u003c/strong\u003e should be returned."
+        "help": "Choose if only \u003cstrong\u003eUnique Item Parameter Values\u003c/strong\u003e should be returned. E.g. if the Item array contains \u003cstrong\u003e[{item_category: \u0027A\u0027},{item_category: \u0027B\u0027 },(item_category: \u0027A\u0027}]\u003c/strong\u003e, the string returned will be \u003cstrong\u003e\u0027A|B\u0027\u003c/strong\u003e."
       }
     ],
     "enablingConditions": [
@@ -440,7 +444,7 @@ ___TEMPLATE_PARAMETERS___
             "type": "EQUALS"
           }
         ],
-        "help": "Type in a \u003cstrong\u003eCustom Item Parameter\u003c/strong\u003e from the dropdown to \u003cstrong\u003ecreate values\u003c/strong\u003e from.",
+        "help": "Type in a \u003cstrong\u003eCustom Item Parameter\u003c/strong\u003e to \u003cstrong\u003ecreate values\u003c/strong\u003e from.",
         "valueValidators": [
           {
             "type": "NON_EMPTY"
@@ -450,7 +454,7 @@ ___TEMPLATE_PARAMETERS___
       {
         "type": "CHECKBOX",
         "name": "multiplyQuantity",
-        "checkboxText": "Multiply Metric with Quantity",
+        "checkboxText": "Multiply Value with Quantity",
         "simpleValueType": true,
         "enablingConditions": [
           {
@@ -459,7 +463,7 @@ ___TEMPLATE_PARAMETERS___
             "type": "NOT_EQUALS"
           }
         ],
-        "help": "Choose if the \u003cstrong\u003eMetric\u003c/strong\u003e should be \u003cstrong\u003eMultiplied\u003c/strong\u003e with \u003cstrong\u003eQuantity\u003c/strong\u003e."
+        "help": "Choose if the \u003cstrong\u003eValue (Metric)\u003c/strong\u003e should be \u003cstrong\u003eMultiplied\u003c/strong\u003e with \u003cstrong\u003eQuantity\u003c/strong\u003e."
       }
     ],
     "enablingConditions": [
@@ -468,8 +472,7 @@ ___TEMPLATE_PARAMETERS___
         "paramValue": "metric",
         "type": "EQUALS"
       }
-    ],
-    "help": "Select a \u003cstrong\u003eStandard Item Parameter\u003c/strong\u003e, or choose \u003cstrong\u003eCustom Item Parameter\u003c/strong\u003e and \u003cstrong\u003etype in\u003c/strong\u003e your parameter."
+    ]
   }
 ]
 
@@ -479,19 +482,17 @@ ___SANDBOXED_JS_FOR_SERVER___
 const getType = require('getType');
 const getEventData = require('getEventData');
 const queryPermission = require('queryPermission');
-const makeTableMap = require('makeTableMap');
 const makeNumber = require('makeNumber');
 
 const keyPath = 'items';
 if (queryPermission('read_event_data', keyPath)) {
-  const itemsArray = getEventData(keyPath);
-  
+  const itemsArray = getEventData(keyPath);  
   if (getType(itemsArray) !== 'array') {
     return;
   }
   const event = getEventData('event_name');
   
-  let standardMapping;
+  let standardMapping = {};
   if (data.selectionType == 'standardMapping') {
     standardMapping = {
       'add_payment_info': data.add_payment_info,
@@ -512,6 +513,7 @@ if (queryPermission('read_event_data', keyPath)) {
   }
     
   let customMapping;
+
   if (data.selectionCustom && data.selectionType == 'customMapping') {
     data.selectionCustom.forEach((customArray) => {
       if (customArray.customParameter === customArray.customParameterVariable) {
@@ -519,7 +521,7 @@ if (queryPermission('read_event_data', keyPath)) {
       }
     });
   }
-  const mappingResult = customMapping ? customMapping : standardMapping[event];
+  const mappingResult = standardMapping[event] ? standardMapping[event] : customMapping;
   
   if (mappingResult) {  
     if (data.itemTypeSelection === 'string') {
@@ -569,11 +571,11 @@ ___SERVER_PERMISSIONS___
             "listItem": [
               {
                 "type": 1,
-                "string": "items"
+                "string": "event_name"
               },
               {
                 "type": 1,
-                "string": "event_name"
+                "string": "items"
               }
             ]
           }
@@ -602,6 +604,6 @@ scenarios: []
 
 ___NOTES___
 
-Created on 8/5/2021, 9:32:38 PM
+Created on 8/6/2021, 3:40:23 PM
 
 
