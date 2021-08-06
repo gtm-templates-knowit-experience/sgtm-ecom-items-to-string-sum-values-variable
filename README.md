@@ -39,7 +39,7 @@ Image shows how to do Custom Mapping.
 ### Create Strings from Item Parameters
 Image shows how to **Create a String** from a **Custom Item Parameter**. Choosing **Standard Item Parameters** can be done using the **Select Item Type** dropdown.
 
-In the example **Unique Items** are returned. E.g. **[{item_category: 'A'},{item_category: 'B'},{item_category: 'A'}]** will return the result **'A|B'**.
+In the example **Unique Items** are returned. E.g. **[{item_color: 'Blue'},{item_color: 'Red'},{item_color: 'Blue'}]** will return the result **'Blue|Red'**.
 
 ![Create Strings from Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-create-string-settings.png)
 
