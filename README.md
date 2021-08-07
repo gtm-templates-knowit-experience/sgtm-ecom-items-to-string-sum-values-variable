@@ -51,10 +51,10 @@ In this example **price** will be **multiplied** with **quantity**.
 ![Sum Values from Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-sum-values-settings.png)
 
 ## Images of the Variable
-Images shows how to **Create Strings** using **Custom Mapping** and **Custom Item Parameters**.
+Image shows how to **Create Strings** using **Custom Mapping** and **Custom Item Parameters**.
 
 ![Create Strings using Custom Mapping and Custom Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-to-string-or-sum-values-custom.png)
 
-Images shows how to **Sum Item Values** using **GA4 Standard Ecommerce Events** and **Standard Item Parameters**.
+Image shows how to **Sum Item Values** using **GA4 Standard Ecommerce Events** and **Standard Item Parameters**.
 
 ![Sum Item Values using GA4 Standard Ecommerce Events and Standard Item Parameters](https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable/blob/main/images/sgtm-ecom-items-to-string-or-sum-values-standard.png)
