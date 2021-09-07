@@ -17,6 +17,10 @@ This Variable for **Google Tag Manager Server-side (SGTM)** turns the Ecommerce 
     * Custom Item Parameters
     * Multiply Item Value with Item Quantity
 
+## Related Information
+A similiar Variable for **Google Tag Manager (Web)** does also exist:
+* [GA4 Ecommerce Items to String or Sum Item Values - Web Variable](https://github.com/gtm-templates-knowit-experience/gtm-ga4-ecom-items-to-string-sum-values-variable)
+
 ## Variable Functionality in Detail
 ### Select Mapping Method
 Mapping can be done using **GA4 Standard Ecommerce Events** or **Custom Mapping**.
