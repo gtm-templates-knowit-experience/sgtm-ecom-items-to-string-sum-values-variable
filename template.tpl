@@ -1,4 +1,4 @@
-﻿___TERMS_OF_SERVICE___
+___TERMS_OF_SERVICE___
 
 By creating or modifying this file you agree to Google Tag Manager's Community
 Template Gallery Developer Terms of Service available at
@@ -15,7 +15,11 @@ ___INFO___
   "securityGroups": [],
   "displayName": "Ecom Items to String or Sum Values",
   "description": "This Variable turns the Ecommerce Item array (e.g. [{item_id: \u002712\u0027, quantity: 1},{item_id: \u002734\u0027, quantity: 2}]) into a string (e.g. \u002712|34\u0027), or sums Item Values (e.g 3).",
-"categories": ["TAG_MANAGEMENT","UTILITY","ANALYTICS"],
+  "categories": [
+    "TAG_MANAGEMENT",
+    "UTILITY",
+    "ANALYTICS"
+  ],
   "containerContexts": [
     "SERVER"
   ]
@@ -322,6 +326,22 @@ ___TEMPLATE_PARAMETERS___
           {
             "value": "location_id",
             "displayValue": "location_id"
+          },
+          {
+            "value": "creative_name",
+            "displayValue": "creative_name"
+          },
+          {
+            "value": "creative_slot",
+            "displayValue": "creative_slot"
+          },
+          {
+            "value": "promotion_id",
+            "displayValue": "promotion_id"
+          },
+          {
+            "value": "promotion_name",
+            "displayValue": "promotion_name"
           }
         ],
         "simpleValueType": true,
