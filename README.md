@@ -1,6 +1,6 @@
-# Ecommerce Items to String or Sum Item Values - SGTM Variable
+# GA4 Ecommerce Items to String or Sum Item Values- SGTM Variable
 
-This Variable for **Google Tag Manager Server-side (SGTM)** turns the Ecommerce Item array (e.g. **[{item_id: '12', quantity: 1},{item_id: '34', quantity: 2}]**) into a string (e.g. **'12|34'**), or sums Item Values (e.g **3**). When summing values you can choose to multiply the value with quantity (e.g. **[{price: 10, quantity: 1},{price: 20, quantity: 2}]**) which will give the result **50**).
+This Variable for **Google Tag Manager Server-side (SGTM)** turns **Google Analytics 4 (GA4)**  Ecommerce Item array (e.g. **[{item_id: '12', quantity: 1},{item_id: '34', quantity: 2}]**) into a string (e.g. **'12|34'**), or sums Item Values (e.g **3**). When summing values you can choose to multiply the value with quantity (e.g. **[{price: 10, quantity: 1},{price: 20, quantity: 2}]**) which will give the result **50**).
 
 This Template is available in the [**Google Tag Manager Template Gallery**](https://tagmanager.google.com/gallery/#/owners/gtm-templates-knowit-experience/templates/sgtm-ecom-items-to-string-sum-values-variable).
 
