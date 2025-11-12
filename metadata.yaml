@@ -2,9 +2,11 @@ homepage: "https://github.com/gtm-templates-knowit-experience/"
 documentation: "https://github.com/gtm-templates-knowit-experience/sgtm-ecom-items-to-string-sum-values-variable"
 versions:
   # Latest version
+  - sha: a0736236d9aff8eb066ac7944fe6d553c20f82e0
+    changeNotes: Return undefined instead of empty string if item parameter is missing.
+  # Older versions
   - sha: b6a455bca39e8142a9c441693175fecd1241a8d2
     changeNotes: Added promotion parameters to the Standard Item Parameter dropdown.
-  # Older versions
   - sha: 9395cabb035946a08ecf9507cfc4a2e7972dca95
     changeNotes: Initial release.
     
